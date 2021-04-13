@@ -89,28 +89,19 @@ bool CombNumCommandManager::ProcessCommand(string& commandStr, ostream& ostrm)
 
 unsigned int CombNumCommandManager::CalcU(unsigned int m, unsigned int n)
 {
-  unsigned int acc = 1;
   if (m == 0)
   {
     if (n == 0)
-    {
-      acc = 1;
-    }
+      return 1;
     else
-    {
-      acc = 0;
-    }
+      return 0;
   }
-  else if (m == 1)
+  if (m == 1)
+    return 1;
+  unsigned int acc = 1;
+  for (unsigned int i = 1; i <= n; i++)
   {
-    acc = 1;
-  }
-  else
-  {
-    for (unsigned int i = 1; i <= n; i++)
-    {
-      acc = SafeNotZeroMult(acc, m);
-    }
+    acc = SafeNotZeroMult(acc, m);
   }
   return acc;
 }

@@ -18,8 +18,7 @@ private:
   static inline unsigned int SafeAdd(unsigned int arg1, unsigned int arg2)
   {
     unsigned int res = arg1 + arg2;
-    if (res < arg1 || res < arg2) 
-      throw exception("Unsigned integer overflow.");
+    if (res < arg1 || res < arg2) throw exception("Unsigned integer overflow.");
     return res;
   }
 
