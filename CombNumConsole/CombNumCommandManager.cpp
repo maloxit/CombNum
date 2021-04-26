@@ -227,7 +227,7 @@ void CombNumCommandManager::CmdFuncHelp(istream& istrm, ostream& ostrm)
     << "H                 - show help." << endl
     << "Q                 - quit the programm." << endl
     << "U <M_arg> <N_arg> - calculates the number of <N_arg>-permutations of <M_arg> with repetitions." << endl
-    << "U <M_arg> <N_arg> - calculates the number of <N_arg>-permutations of <M_arg> without repetitions." << endl
+    << "A <M_arg> <N_arg> - calculates the number of <N_arg>-permutations of <M_arg> without repetitions." << endl
     << "P <M_arg>         - calculates the number of permutations of <M_arg>." << endl
     << "C <M_arg> <N_arg> - calculates the binomial coefficient." << endl
     << "S <M_arg> <N_arg> - calculates the Stirling numbers of the second kind." << endl
